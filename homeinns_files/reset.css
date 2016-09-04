@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align:baseline;
+}
+html { font-family:"微软雅黑";-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; }
+body {font-family:"微软雅黑"; margin: 0; font-size: 1.4rem; line-height: 1.5; color: #ccc; background-color:#fff; height: 100%; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+a{ text-decoration:none;}
+a:link{ text-decoration:none;}
+a:visited{ text-decoration:none;}
+a:hover{ text-decoration:none;outline:none;}
+a:active, a:focus {outline:none;}
+
+/*浮动相关*/
+.floatleft{float:left;}
+.floatright{float:right;}
+.clear{clear:both;}
+.fix{overflow:hidden; zoom:1;}
+
+.main_w975{ width:975px; margin:0px auto;}
+
+.popup{position:absolute;left:0;top:0px; background:#000;filter:alpha(opacity=70);-moz-opacity:0.70;opacity:0.70;z-index:9999;width:100%; display:none; height:100%;}
+i{ background-image:url(../newimages/public/icon_set.png);background-repeat:no-repeat;display:inline-block;}

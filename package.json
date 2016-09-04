@@ -13,6 +13,7 @@
         "gulp-sass": "2.3.2",
         "gulp-changed": "1.3.0",
         "gulp-watch": "4.3.5",
-        "gulp-typescript": "2.13.6"
+        "gulp-typescript": "2.13.6",
+        "heatmap":"0.0.5"
     }
 }

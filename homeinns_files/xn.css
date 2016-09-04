@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+.home_xn{ background:url(../newimages/xn/xn_bg.png) left center no-repeat; width:727px; height:66px; position:absolute; left:0px; top:-50px; z-index:9999; margin-left:-35px;}
+.top_fu{ background:url(../newimages/xn/top_fu.png) left center no-repeat; width:107px; height:235px; position:absolute; left:50%; top:37px; z-index:9999; margin-left:-684px;}
+.centerL_img{ background:url(../newimages/xn/centerL_img.png) left center no-repeat; width:280px; height:279px; position:absolute; left:50%; top:987px; z-index:-1; margin-left:-760px;}
+.centerR_img{ background:url(../newimages/xn/centerR_img.png) left center no-repeat; width:296px; height:484px; position:absolute; left:50%; top:956px; z-index:9999; margin-left:415px;}
+.bottomL_img{ background:url(../newimages/xn/bottomL_img.png) left center no-repeat; width:251px; height:308px; position:absolute; left:50%; top:2170px; z-index:9999; margin-left:-813px;}
+.bottomR_img{ background:url(../newimages/xn/bottomR_img.png) left center no-repeat; width:237px; height:291px; position:absolute; left:50%; top:1514px; z-index:9999; margin-left:477px;}
+.footer_f1{ background:url(../newimages/xn/f1.png) left center no-repeat; position:absolute; left:50%; bottom:0px; z-index:9999; width:272px; height:203px; margin-left:-719px;}
+.footer_f2{ background:url(../newimages/xn/f2.png) left center no-repeat; position:absolute; left:50%; bottom:0px; z-index:9999; width:191px; height:156px; margin-left:526px;}
+@media (max-width:1920px) {
+.centerL_img{ margin-left:-990px;}
+.centerR_img{ margin-left:686px;}
+.bottomL_img{ margin-left:-983px;}
+.bottomR_img{ margin-left:740px;}
+}
+@media (max-width:1800px) {
+.centerL_img{ margin-left:-760px;}
+.centerR_img{ margin-left:415px;}
+.bottomL_img{ margin-left:-813px;}
+.bottomR_img{ margin-left:477px;}
+}
+@media (max-width:1240px) {
+.top_fu{margin-left:-515px;}
+.centerL_img{ margin-left:-600px;}
+.centerR_img{ margin-left:296px;}
+.bottomL_img{ margin-left:-663px;}
+.bottomR_img{ margin-left:373px;}
+}

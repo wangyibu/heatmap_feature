@@ -1,0 +1,782 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\package.json
+5 warn package.json heatmap_feature@1.0.0 No description
+6 warn package.json heatmap_feature@1.0.0 No repository field.
+7 warn package.json heatmap_feature@1.0.0 No README data
+8 verbose install where, deps [ 'd:\\VSC_workspace\\heatmap_feature',
+8 verbose install   [ 'gulp',
+8 verbose install     'gulp-sass',
+8 verbose install     'gulp-changed',
+8 verbose install     'gulp-watch',
+8 verbose install     'gulp-typescript',
+8 verbose install     'heatmap' ] ]
+9 verbose install where, peers [ 'd:\\VSC_workspace\\heatmap_feature', [] ]
+10 verbose installManyTop reading for lifecycle d:\VSC_workspace\heatmap_feature\package.json
+11 info preinstall heatmap_feature@1.0.0
+12 verbose installManyTop reading scoped package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp\package.json
+13 verbose installManyTop reading scoped package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-changed\package.json
+14 verbose installManyTop reading scoped package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-sass\package.json
+15 verbose installManyTop reading scoped package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-typescript\package.json
+16 verbose installManyTop reading scoped package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-watch\package.json
+17 verbose installManyTop reading scoped package data from d:\VSC_workspace\heatmap_feature\node_modules\typings\package.json
+18 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\package.json
+19 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp\package.json
+20 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-changed\package.json
+21 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-sass\package.json
+22 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-typescript\package.json
+23 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\gulp-watch\package.json
+24 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\typings\package.json
+25 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\.bin\gulp\package.json
+26 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\.bin\gulp.cmd\package.json
+27 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\.bin\typings\package.json
+28 verbose targetResolver reading package data from d:\VSC_workspace\heatmap_feature\node_modules\.bin\typings.cmd\package.json
+29 verbose already installed skipping gulp-typescript@2.13.6 d:\VSC_workspace\heatmap_feature
+30 silly cache add args [ 'heatmap@0.0.5', null ]
+31 verbose cache add spec heatmap@0.0.5
+32 silly cache add parsed spec Result {
+32 silly cache add   raw: 'heatmap@0.0.5',
+32 silly cache add   scope: null,
+32 silly cache add   name: 'heatmap',
+32 silly cache add   rawSpec: '0.0.5',
+32 silly cache add   spec: '0.0.5',
+32 silly cache add   type: 'version' }
+33 silly addNamed heatmap@0.0.5
+34 verbose addNamed "0.0.5" is a plain semver version for heatmap
+35 silly mapToRegistry name heatmap
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'heatmap',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   name: 'heatmap',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/heatmap
+40 verbose addNameVersion registry:https://registry.npmjs.org/heatmap not in flight; fetching
+41 verbose already installed skipping gulp@3.9.1 d:\VSC_workspace\heatmap_feature
+42 verbose already installed skipping gulp-sass@2.3.2 d:\VSC_workspace\heatmap_feature
+43 verbose already installed skipping gulp-changed@1.3.0 d:\VSC_workspace\heatmap_feature
+44 verbose already installed skipping gulp-watch@4.3.5 d:\VSC_workspace\heatmap_feature
+45 verbose request uri https://registry.npmjs.org/heatmap
+46 verbose request no auth needed
+47 info attempt registry request try #1 at 11:08:26
+48 verbose request id c92da3c4520166b1
+49 http request GET https://registry.npmjs.org/heatmap
+50 http 200 https://registry.npmjs.org/heatmap
+51 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+51 verbose headers   etag: '"F3UKMMSMWEWTCLJDUV05B7E4H"',
+51 verbose headers   'content-type': 'application/json',
+51 verbose headers   'content-encoding': 'gzip',
+51 verbose headers   'cache-control': 'max-age=300',
+51 verbose headers   'content-length': '2040',
+51 verbose headers   'accept-ranges': 'bytes',
+51 verbose headers   date: 'Sun, 04 Sep 2016 03:08:27 GMT',
+51 verbose headers   via: '1.1 varnish',
+51 verbose headers   age: '0',
+51 verbose headers   connection: 'keep-alive',
+51 verbose headers   'x-served-by': 'cache-sea1920-SEA',
+51 verbose headers   'x-cache': 'MISS',
+51 verbose headers   'x-cache-hits': '0',
+51 verbose headers   'x-timer': 'S1472958507.299776,VS0,VE23',
+51 verbose headers   vary: 'Accept-Encoding' }
+52 silly get cb [ 200,
+52 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+52 silly get     etag: '"F3UKMMSMWEWTCLJDUV05B7E4H"',
+52 silly get     'content-type': 'application/json',
+52 silly get     'content-encoding': 'gzip',
+52 silly get     'cache-control': 'max-age=300',
+52 silly get     'content-length': '2040',
+52 silly get     'accept-ranges': 'bytes',
+52 silly get     date: 'Sun, 04 Sep 2016 03:08:27 GMT',
+52 silly get     via: '1.1 varnish',
+52 silly get     age: '0',
+52 silly get     connection: 'keep-alive',
+52 silly get     'x-served-by': 'cache-sea1920-SEA',
+52 silly get     'x-cache': 'MISS',
+52 silly get     'x-cache-hits': '0',
+52 silly get     'x-timer': 'S1472958507.299776,VS0,VE23',
+52 silly get     vary: 'Accept-Encoding' } ]
+53 verbose get saving heatmap to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\heatmap\.cache.json
+54 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+55 silly mapToRegistry name heatmap
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: 'heatmap',
+58 silly mapToRegistry   scope: null,
+58 silly mapToRegistry   name: 'heatmap',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/heatmap
+60 verbose addRemoteTarball https://registry.npmjs.org/heatmap/-/heatmap-0.0.5.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/heatmap/-/heatmap-0.0.5.tgz',
+61 verbose addRemoteTarball   'de6aeda7f2e491a78eec5d26fba0bd3b79955097' ]
+62 info retry fetch attempt 1 at 11:08:27
+63 info attempt registry request try #1 at 11:08:27
+64 http fetch GET https://registry.npmjs.org/heatmap/-/heatmap-0.0.5.tgz
+65 http fetch 200 https://registry.npmjs.org/heatmap/-/heatmap-0.0.5.tgz
+66 silly fetchAndShaCheck shasum de6aeda7f2e491a78eec5d26fba0bd3b79955097
+67 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3276-5719fde3\registry.npmjs.org\heatmap\-\heatmap-0.0.5.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for heatmap@0.0.5
+69 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+70 silly cache afterAdd heatmap@0.0.5
+71 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\heatmap\0.0.5\package\package.json not in flight; writing
+72 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+73 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\heatmap\0.0.5\package\package.json written
+74 silly install resolved [ { name: 'heatmap',
+74 silly install resolved     version: '0.0.5',
+74 silly install resolved     description: 'canvas heat maps for node and the browser',
+74 silly install resolved     main: 'index.js',
+74 silly install resolved     directories: { lib: '.', example: 'example', test: 'test' },
+74 silly install resolved     dependencies: { 'color-convert': '0.2.x', canvas: '1.0.x' },
+74 silly install resolved     devDependencies:
+74 silly install resolved      { expresso: '0.7.x',
+74 silly install resolved        'jquery-browserify': '1.6.x',
+74 silly install resolved        browserify: '1.3.x',
+74 silly install resolved        'uglify-js': '>=1.0.6 <1.1' },
+74 silly install resolved     scripts: { test: 'expresso' },
+74 silly install resolved     repository:
+74 silly install resolved      { type: 'git',
+74 silly install resolved        url: 'http://github.com/substack/node-heatmap.git' },
+74 silly install resolved     keywords: [ 'heatmap', 'canvas', 'browser' ],
+74 silly install resolved     author:
+74 silly install resolved      { name: 'James Halliday',
+74 silly install resolved        email: 'mail@substack.net',
+74 silly install resolved        url: 'http://substack.net' },
+74 silly install resolved     license: 'MIT/X11',
+74 silly install resolved     engine: { node: '>=0.4' },
+74 silly install resolved     readme: 'heatmap\n=======\n\nHeatmaps for node.js and the browser, groovy!\n\n![groovy heatmap, man](http://substack.net/images/heatmap.png)\n\nexample\n=======\n\nblob.js\n-------\n\n````javascript\nvar heatmap = require(\'heatmap\');\n\nvar heat = heatmap(500, 500, { radius : 30 });\nfor (var i = 0; i < 5000; i++) {\n    var rho = Math.random() * 2 * Math.PI;\n    var z = Math.pow(Math.random(), 2) * 200;\n    \n    var x = 250 + Math.cos(rho) * z;\n    var y = 250 + Math.sin(rho) * z;\n    \n    heat.addPoint(x, y);\n}\nheat.draw();\n\nvar fs = require(\'fs\');\nfs.writeFileSync(\'blob.png\', heat.canvas.toBuffer());\n````\n\nmethods\n=======\n\nvar heatmap = require(\'heatmap\');\n\nvar heat = heatmap(...)\n-----------------------\n\nCreate a new heatmap from an existing canvas element, a numeric width and\nheight, or an option object with canvas or width and height fields.\n\nOptionally, you can set the `opts.radius` and `opts.threshold` to control the\nrendering a little.\n\nheat.addPoint(x, y, params)\n---------------------------\n\nAdd a point to the heatmap with a `radius`.\n\n`params` can have:\n\n* radius, defaults to heat.radius || 20\n* weight, defaults to 0.1\n\nheat.scale(x, y)\n----------------\n\nScale the canvas by the coefficients `x` and `y`.\n\nIf `y` is undefined, scale both x and y by the first parameter, `x`.\n\nheat.draw()\n-----------\n\nRender all the points onto the canvas element.\n\nheat.canvas\n-----------\n\nThe HTML Canvas element.\n\nProtip: with the [canvas module](https://github.com/LearnBoost/node-canvas) for\nnode you can `heat.canvas.buffer()` to get a Buffer with a PNG file all up in it.\n\ninstall\n=======\n\nWith [npm](http://npmjs.org), just do:\n\n    npm install heatmap\n',
+74 silly install resolved     readmeFilename: 'README.markdown',
+74 silly install resolved     _id: 'heatmap@0.0.5',
+74 silly install resolved     dist:
+74 silly install resolved      { shasum: 'de6aeda7f2e491a78eec5d26fba0bd3b79955097',
+74 silly install resolved        tarball: 'https://registry.npmjs.org/heatmap/-/heatmap-0.0.5.tgz' },
+74 silly install resolved     _from: 'heatmap@0.0.5',
+74 silly install resolved     _npmVersion: '1.2.2',
+74 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+74 silly install resolved     maintainers: [ [Object] ],
+74 silly install resolved     _shasum: 'de6aeda7f2e491a78eec5d26fba0bd3b79955097',
+74 silly install resolved     _resolved: 'https://registry.npmjs.org/heatmap/-/heatmap-0.0.5.tgz' } ]
+75 info install heatmap@0.0.5 into d:\VSC_workspace\heatmap_feature
+76 info installOne heatmap@0.0.5
+77 verbose installOne of heatmap to d:\VSC_workspace\heatmap_feature not in flight; installing
+78 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+79 verbose lock using C:\Users\admin\AppData\Roaming\npm-cache\_locks\heatmap-223ff933a3ce8aa5.lock for d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+80 silly install write writing heatmap 0.0.5 to d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+81 verbose unbuild node_modules\heatmap
+82 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap is being purged from base d:\VSC_workspace\heatmap_feature
+83 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+84 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\heatmap\0.0.5\package.tgz
+85 verbose tar unpacking to d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+86 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap is being purged
+87 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+88 silly gunzTarPerm modes [ '777', '666' ]
+89 silly gunzTarPerm extractEntry package.json
+90 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+91 silly gunzTarPerm extractEntry index.js
+92 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+93 silly gunzTarPerm extractEntry example/blob.js
+94 silly gunzTarPerm modified mode [ 'example/blob.js', 420, 438 ]
+95 silly gunzTarPerm extractEntry example/web/server.js
+96 silly gunzTarPerm modified mode [ 'example/web/server.js', 420, 438 ]
+97 silly gunzTarPerm extractEntry example/web/main.js
+98 silly gunzTarPerm modified mode [ 'example/web/main.js', 420, 438 ]
+99 silly gunzTarPerm extractEntry example/web/index.html
+100 silly gunzTarPerm modified mode [ 'example/web/index.html', 420, 438 ]
+101 silly gunzTarPerm extractEntry README.markdown
+102 silly gunzTarPerm modified mode [ 'README.markdown', 420, 438 ]
+103 verbose write writing to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\package.json
+104 info preinstall heatmap@0.0.5
+105 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\node_modules\heatmap\package.json
+106 silly prepareForInstallMany adding color-convert@0.2.x from heatmap dependencies
+107 silly prepareForInstallMany adding canvas@1.0.x from heatmap dependencies
+108 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\node_modules\heatmap\package.json
+109 silly cache add args [ 'color-convert@0.2.x', null ]
+110 verbose cache add spec color-convert@0.2.x
+111 silly cache add args [ 'canvas@1.0.x', null ]
+112 verbose cache add spec canvas@1.0.x
+113 silly cache add parsed spec Result {
+113 silly cache add   raw: 'color-convert@0.2.x',
+113 silly cache add   scope: null,
+113 silly cache add   name: 'color-convert',
+113 silly cache add   rawSpec: '0.2.x',
+113 silly cache add   spec: '>=0.2.0 <0.3.0',
+113 silly cache add   type: 'range' }
+114 silly addNamed color-convert@>=0.2.0 <0.3.0
+115 verbose addNamed ">=0.2.0 <0.3.0" is a valid semver range for color-convert
+116 silly addNameRange { name: 'color-convert',
+116 silly addNameRange   range: '>=0.2.0 <0.3.0',
+116 silly addNameRange   hasData: false }
+117 silly mapToRegistry name color-convert
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry data Result {
+120 silly mapToRegistry   raw: 'color-convert',
+120 silly mapToRegistry   scope: null,
+120 silly mapToRegistry   name: 'color-convert',
+120 silly mapToRegistry   rawSpec: '',
+120 silly mapToRegistry   spec: 'latest',
+120 silly mapToRegistry   type: 'tag' }
+121 silly mapToRegistry uri https://registry.npmjs.org/color-convert
+122 verbose addNameRange registry:https://registry.npmjs.org/color-convert not in flight; fetching
+123 silly cache add parsed spec Result {
+123 silly cache add   raw: 'canvas@1.0.x',
+123 silly cache add   scope: null,
+123 silly cache add   name: 'canvas',
+123 silly cache add   rawSpec: '1.0.x',
+123 silly cache add   spec: '>=1.0.0 <1.1.0',
+123 silly cache add   type: 'range' }
+124 silly addNamed canvas@>=1.0.0 <1.1.0
+125 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for canvas
+126 silly addNameRange { name: 'canvas', range: '>=1.0.0 <1.1.0', hasData: false }
+127 silly mapToRegistry name canvas
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry data Result {
+130 silly mapToRegistry   raw: 'canvas',
+130 silly mapToRegistry   scope: null,
+130 silly mapToRegistry   name: 'canvas',
+130 silly mapToRegistry   rawSpec: '',
+130 silly mapToRegistry   spec: 'latest',
+130 silly mapToRegistry   type: 'tag' }
+131 silly mapToRegistry uri https://registry.npmjs.org/canvas
+132 verbose addNameRange registry:https://registry.npmjs.org/canvas not in flight; fetching
+133 verbose request uri https://registry.npmjs.org/color-convert
+134 verbose request no auth needed
+135 info attempt registry request try #1 at 11:08:27
+136 http request GET https://registry.npmjs.org/color-convert
+137 verbose request uri https://registry.npmjs.org/canvas
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 11:08:27
+140 verbose etag "8K73GG0V7TO7N3T6POE5AE0D6"
+141 http request GET https://registry.npmjs.org/canvas
+142 http 200 https://registry.npmjs.org/color-convert
+143 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+143 verbose headers   etag: '"4SHFZYHZ94R6RZ3DQXV0PTRQA"',
+143 verbose headers   'content-type': 'application/json',
+143 verbose headers   'content-encoding': 'gzip',
+143 verbose headers   'cache-control': 'max-age=300',
+143 verbose headers   'content-length': '5500',
+143 verbose headers   'accept-ranges': 'bytes',
+143 verbose headers   date: 'Sun, 04 Sep 2016 03:08:27 GMT',
+143 verbose headers   via: '1.1 varnish',
+143 verbose headers   age: '95',
+143 verbose headers   connection: 'keep-alive',
+143 verbose headers   'x-served-by': 'cache-sea1920-SEA',
+143 verbose headers   'x-cache': 'HIT',
+143 verbose headers   'x-cache-hits': '2',
+143 verbose headers   'x-timer': 'S1472958507.961214,VS0,VE0',
+143 verbose headers   vary: 'Accept-Encoding' }
+144 silly get cb [ 200,
+144 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+144 silly get     etag: '"4SHFZYHZ94R6RZ3DQXV0PTRQA"',
+144 silly get     'content-type': 'application/json',
+144 silly get     'content-encoding': 'gzip',
+144 silly get     'cache-control': 'max-age=300',
+144 silly get     'content-length': '5500',
+144 silly get     'accept-ranges': 'bytes',
+144 silly get     date: 'Sun, 04 Sep 2016 03:08:27 GMT',
+144 silly get     via: '1.1 varnish',
+144 silly get     age: '95',
+144 silly get     connection: 'keep-alive',
+144 silly get     'x-served-by': 'cache-sea1920-SEA',
+144 silly get     'x-cache': 'HIT',
+144 silly get     'x-cache-hits': '2',
+144 silly get     'x-timer': 'S1472958507.961214,VS0,VE0',
+144 silly get     vary: 'Accept-Encoding' } ]
+145 verbose get saving color-convert to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\color-convert\.cache.json
+146 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+147 silly addNameRange number 2 { name: 'color-convert', range: '>=0.2.0 <0.3.0', hasData: true }
+148 silly addNameRange versions [ 'color-convert',
+148 silly addNameRange   [ '0.1.0',
+148 silly addNameRange     '0.2.0',
+148 silly addNameRange     '0.2.1',
+148 silly addNameRange     '0.3.0',
+148 silly addNameRange     '0.3.1',
+148 silly addNameRange     '0.3.4',
+148 silly addNameRange     '0.4.0',
+148 silly addNameRange     '0.5.0',
+148 silly addNameRange     '0.5.1',
+148 silly addNameRange     '0.5.2',
+148 silly addNameRange     '0.5.3',
+148 silly addNameRange     '0.6.0',
+148 silly addNameRange     '0.7.0',
+148 silly addNameRange     '1.0.0',
+148 silly addNameRange     '1.1.0',
+148 silly addNameRange     '1.1.1',
+148 silly addNameRange     '1.1.2',
+148 silly addNameRange     '1.2.0',
+148 silly addNameRange     '1.2.1',
+148 silly addNameRange     '1.2.2',
+148 silly addNameRange     '1.3.0',
+148 silly addNameRange     '1.3.1',
+148 silly addNameRange     '1.4.0',
+148 silly addNameRange     '1.5.0' ] ]
+149 silly addNamed color-convert@0.2.1
+150 verbose addNamed "0.2.1" is a plain semver version for color-convert
+151 silly mapToRegistry name color-convert
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry data Result {
+154 silly mapToRegistry   raw: 'color-convert',
+154 silly mapToRegistry   scope: null,
+154 silly mapToRegistry   name: 'color-convert',
+154 silly mapToRegistry   rawSpec: '',
+154 silly mapToRegistry   spec: 'latest',
+154 silly mapToRegistry   type: 'tag' }
+155 silly mapToRegistry uri https://registry.npmjs.org/color-convert
+156 verbose addRemoteTarball https://registry.npmjs.org/color-convert/-/color-convert-0.2.1.tgz not in flight; adding
+157 verbose addRemoteTarball [ 'https://registry.npmjs.org/color-convert/-/color-convert-0.2.1.tgz',
+157 verbose addRemoteTarball   '363cab23c94b31a0d64db71048b8c6a940f8c68c' ]
+158 info retry fetch attempt 1 at 11:08:28
+159 info attempt registry request try #1 at 11:08:28
+160 http fetch GET https://registry.npmjs.org/color-convert/-/color-convert-0.2.1.tgz
+161 http fetch 200 https://registry.npmjs.org/color-convert/-/color-convert-0.2.1.tgz
+162 silly fetchAndShaCheck shasum 363cab23c94b31a0d64db71048b8c6a940f8c68c
+163 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3276-5719fde3\registry.npmjs.org\color-convert\-\color-convert-0.2.1.tgz not in flight; adding
+164 verbose addTmpTarball already have metadata; skipping unpack for color-convert@0.2.1
+165 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+166 silly cache afterAdd color-convert@0.2.1
+167 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\color-convert\0.2.1\package\package.json not in flight; writing
+168 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+169 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\color-convert\0.2.1\package\package.json written
+170 http 200 https://registry.npmjs.org/canvas
+171 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+171 verbose headers   etag: '"8NZPF2IOX0YIBXYY9MW95UOP9"',
+171 verbose headers   'content-type': 'application/json',
+171 verbose headers   'content-encoding': 'gzip',
+171 verbose headers   'cache-control': 'max-age=300',
+171 verbose headers   'content-length': '16771',
+171 verbose headers   'accept-ranges': 'bytes',
+171 verbose headers   date: 'Sun, 04 Sep 2016 03:08:28 GMT',
+171 verbose headers   via: '1.1 varnish',
+171 verbose headers   age: '34',
+171 verbose headers   connection: 'keep-alive',
+171 verbose headers   'x-served-by': 'cache-sea1921-SEA',
+171 verbose headers   'x-cache': 'HIT',
+171 verbose headers   'x-cache-hits': '1',
+171 verbose headers   'x-timer': 'S1472958508.361834,VS0,VE0',
+171 verbose headers   vary: 'Accept-Encoding' }
+172 silly get cb [ 200,
+172 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+172 silly get     etag: '"8NZPF2IOX0YIBXYY9MW95UOP9"',
+172 silly get     'content-type': 'application/json',
+172 silly get     'content-encoding': 'gzip',
+172 silly get     'cache-control': 'max-age=300',
+172 silly get     'content-length': '16771',
+172 silly get     'accept-ranges': 'bytes',
+172 silly get     date: 'Sun, 04 Sep 2016 03:08:28 GMT',
+172 silly get     via: '1.1 varnish',
+172 silly get     age: '34',
+172 silly get     connection: 'keep-alive',
+172 silly get     'x-served-by': 'cache-sea1921-SEA',
+172 silly get     'x-cache': 'HIT',
+172 silly get     'x-cache-hits': '1',
+172 silly get     'x-timer': 'S1472958508.361834,VS0,VE0',
+172 silly get     vary: 'Accept-Encoding' } ]
+173 verbose get saving canvas to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\canvas\.cache.json
+174 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+175 silly addNameRange number 2 { name: 'canvas', range: '>=1.0.0 <1.1.0', hasData: true }
+176 silly addNameRange versions [ 'canvas',
+176 silly addNameRange   [ '0.0.1',
+176 silly addNameRange     '0.0.2',
+176 silly addNameRange     '0.0.3',
+176 silly addNameRange     '0.0.4',
+176 silly addNameRange     '0.0.5',
+176 silly addNameRange     '0.0.6',
+176 silly addNameRange     '0.0.7',
+176 silly addNameRange     '0.0.8',
+176 silly addNameRange     '0.1.0',
+176 silly addNameRange     '0.2.0',
+176 silly addNameRange     '0.2.1',
+176 silly addNameRange     '0.3.0',
+176 silly addNameRange     '0.3.1',
+176 silly addNameRange     '0.3.2',
+176 silly addNameRange     '0.3.3',
+176 silly addNameRange     '0.4.0',
+176 silly addNameRange     '0.4.1',
+176 silly addNameRange     '0.4.2',
+176 silly addNameRange     '0.4.3',
+176 silly addNameRange     '0.5.0',
+176 silly addNameRange     '0.5.1',
+176 silly addNameRange     '0.5.2',
+176 silly addNameRange     '0.5.3',
+176 silly addNameRange     '0.5.4',
+176 silly addNameRange     '0.6.0',
+176 silly addNameRange     '0.7.0',
+176 silly addNameRange     '0.7.1',
+176 silly addNameRange     '0.7.2',
+176 silly addNameRange     '0.7.3',
+176 silly addNameRange     '0.8.0',
+176 silly addNameRange     '0.8.1',
+176 silly addNameRange     '0.8.2',
+176 silly addNameRange     '0.8.3',
+176 silly addNameRange     '0.9.0',
+176 silly addNameRange     '0.10.0',
+176 silly addNameRange     '0.10.1',
+176 silly addNameRange     '0.10.2',
+176 silly addNameRange     '0.10.3',
+176 silly addNameRange     '0.11.0',
+176 silly addNameRange     '0.11.1',
+176 silly addNameRange     '0.11.2',
+176 silly addNameRange     '0.11.3',
+176 silly addNameRange     '0.12.0',
+176 silly addNameRange     '0.12.1',
+176 silly addNameRange     '0.13.0',
+176 silly addNameRange     '0.13.1',
+176 silly addNameRange     '1.0.0',
+176 silly addNameRange     '1.0.1',
+176 silly addNameRange     '1.0.2',
+176 silly addNameRange     '1.0.3',
+176 silly addNameRange     '1.0.4',
+176 silly addNameRange     '1.1.0',
+176 silly addNameRange     '1.1.1',
+176 silly addNameRange     '1.1.2',
+176 silly addNameRange     '1.1.3',
+176 silly addNameRange     '1.1.4',
+176 silly addNameRange     '1.1.5',
+176 silly addNameRange     '1.1.6',
+176 silly addNameRange     '1.2.0',
+176 silly addNameRange     '1.2.1',
+176 silly addNameRange     '1.2.2',
+176 silly addNameRange     '1.2.3',
+176 silly addNameRange     '1.2.4',
+176 silly addNameRange     '1.2.5',
+176 silly addNameRange     '1.2.6',
+176 silly addNameRange     '1.2.7',
+176 silly addNameRange     '1.2.8',
+176 silly addNameRange     '1.2.9',
+176 silly addNameRange     '1.2.10',
+176 silly addNameRange     '1.2.11',
+176 silly addNameRange     '1.3.0',
+176 silly addNameRange     '1.3.1',
+176 silly addNameRange     '1.3.2',
+176 silly addNameRange     '1.3.3',
+176 silly addNameRange     '1.3.4',
+176 silly addNameRange     '1.3.5',
+176 silly addNameRange     '1.3.6',
+176 silly addNameRange     '1.3.7',
+176 silly addNameRange     '1.3.8',
+176 silly addNameRange     '1.3.9',
+176 silly addNameRange     '1.3.10',
+176 silly addNameRange     '1.3.11',
+176 silly addNameRange     '1.3.12',
+176 silly addNameRange     '1.3.13',
+176 silly addNameRange     '1.3.14',
+176 silly addNameRange     '1.3.15',
+176 silly addNameRange     '1.3.16',
+176 silly addNameRange     '1.4.0' ] ]
+177 silly addNamed canvas@1.0.4
+178 verbose addNamed "1.0.4" is a plain semver version for canvas
+179 silly mapToRegistry name canvas
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: 'canvas',
+182 silly mapToRegistry   scope: null,
+182 silly mapToRegistry   name: 'canvas',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag' }
+183 silly mapToRegistry uri https://registry.npmjs.org/canvas
+184 verbose addRemoteTarball https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz not in flight; adding
+185 verbose addRemoteTarball [ 'https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz',
+185 verbose addRemoteTarball   'e17c9eef9e7ffc2df0d03e02761e5ef31d694c46' ]
+186 info retry fetch attempt 1 at 11:08:28
+187 info attempt registry request try #1 at 11:08:28
+188 http fetch GET https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+189 http fetch 200 https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+190 silly fetchAndShaCheck shasum e17c9eef9e7ffc2df0d03e02761e5ef31d694c46
+191 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-3276-5719fde3\registry.npmjs.org\canvas\-\canvas-1.0.4.tgz not in flight; adding
+192 verbose addTmpTarball already have metadata; skipping unpack for canvas@1.0.4
+193 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+194 silly cache afterAdd canvas@1.0.4
+195 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\canvas\1.0.4\package\package.json not in flight; writing
+196 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+197 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\canvas\1.0.4\package\package.json written
+198 silly install resolved [ { name: 'color-convert',
+198 silly install resolved     description: 'Plain color conversion functions',
+198 silly install resolved     version: '0.2.1',
+198 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+198 silly install resolved     repository:
+198 silly install resolved      { type: 'git',
+198 silly install resolved        url: 'git://github.com/harthur/color-convert.git' },
+198 silly install resolved     main: './index',
+198 silly install resolved     devDependencies: { browserify: '>=1.0.0', 'uglify-js': '1.0.x' },
+198 silly install resolved     keywords: [ 'color', 'colour', 'rgb' ],
+198 silly install resolved     _npmJsonOpts:
+198 silly install resolved      { file: '/Users/harth/.npm/color-convert/0.2.1/package/package.json',
+198 silly install resolved        wscript: false,
+198 silly install resolved        contributors: false,
+198 silly install resolved        serverjs: false },
+198 silly install resolved     _id: 'color-convert@0.2.1',
+198 silly install resolved     dependencies: {},
+198 silly install resolved     engines: { node: '*' },
+198 silly install resolved     _engineSupported: true,
+198 silly install resolved     _npmVersion: '1.0.13',
+198 silly install resolved     _nodeVersion: 'v0.5.0-pre',
+198 silly install resolved     _defaultsLoaded: true,
+198 silly install resolved     dist:
+198 silly install resolved      { shasum: '363cab23c94b31a0d64db71048b8c6a940f8c68c',
+198 silly install resolved        tarball: 'https://registry.npmjs.org/color-convert/-/color-convert-0.2.1.tgz' },
+198 silly install resolved     scripts: {},
+198 silly install resolved     directories: {},
+198 silly install resolved     _shasum: '363cab23c94b31a0d64db71048b8c6a940f8c68c',
+198 silly install resolved     _resolved: 'https://registry.npmjs.org/color-convert/-/color-convert-0.2.1.tgz',
+198 silly install resolved     _from: 'color-convert@>=0.2.0 <0.3.0' },
+198 silly install resolved   { name: 'canvas',
+198 silly install resolved     description: 'Canvas graphics API backed by Cairo',
+198 silly install resolved     version: '1.0.4',
+198 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+198 silly install resolved     keywords:
+198 silly install resolved      [ 'canvas',
+198 silly install resolved        'graphic',
+198 silly install resolved        'graphics',
+198 silly install resolved        'pixman',
+198 silly install resolved        'cairo',
+198 silly install resolved        'image',
+198 silly install resolved        'images',
+198 silly install resolved        'pdf' ],
+198 silly install resolved     homepage: 'https://github.com/learnboost/node-canvas',
+198 silly install resolved     repository: { type: 'git', url: 'git://github.com/learnboost/node-canvas' },
+198 silly install resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+198 silly install resolved     devDependencies: { express: '3.0', jade: '0.28.1', mocha: '*', should: '*' },
+198 silly install resolved     engines: { node: '>= 0.6.0' },
+198 silly install resolved     main: './lib/canvas.js',
+198 silly install resolved     gypfile: true,
+198 silly install resolved     bugs: { url: 'https://github.com/learnboost/node-canvas/issues' },
+198 silly install resolved     _id: 'canvas@1.0.4',
+198 silly install resolved     dist:
+198 silly install resolved      { shasum: 'e17c9eef9e7ffc2df0d03e02761e5ef31d694c46',
+198 silly install resolved        tarball: 'https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz' },
+198 silly install resolved     _from: 'canvas@>=1.0.0 <1.1.0',
+198 silly install resolved     _npmVersion: '1.2.30',
+198 silly install resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+198 silly install resolved     maintainers: [ [Object] ],
+198 silly install resolved     directories: {},
+198 silly install resolved     _shasum: 'e17c9eef9e7ffc2df0d03e02761e5ef31d694c46',
+198 silly install resolved     _resolved: 'https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz' } ]
+199 info install color-convert@0.2.1 into d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+200 info install canvas@1.0.4 into d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+201 info installOne color-convert@0.2.1
+202 verbose installOne of color-convert to d:\VSC_workspace\heatmap_feature\node_modules\heatmap not in flight; installing
+203 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+204 info installOne canvas@1.0.4
+205 verbose installOne of canvas to d:\VSC_workspace\heatmap_feature\node_modules\heatmap not in flight; installing
+206 verbose correctMkdir C:\Users\admin\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+207 verbose lock using C:\Users\admin\AppData\Roaming\npm-cache\_locks\color-convert-790ad383af280cc9.lock for d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+208 verbose lock using C:\Users\admin\AppData\Roaming\npm-cache\_locks\canvas-6201a503620995be.lock for d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+209 silly install write writing color-convert 0.2.1 to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+210 silly install write writing canvas 1.0.4 to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+211 verbose unbuild node_modules\heatmap\node_modules\color-convert
+212 verbose unbuild node_modules\heatmap\node_modules\canvas
+213 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert is being purged from base d:\VSC_workspace\heatmap_feature
+214 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+215 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\color-convert\0.2.1\package.tgz
+216 verbose tar unpacking to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+217 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert is being purged
+218 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+219 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas is being purged from base d:\VSC_workspace\heatmap_feature
+220 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+221 silly gunzTarPerm modes [ '777', '666' ]
+222 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+223 verbose tar unpacking to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+224 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas is being purged
+225 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+226 silly gunzTarPerm modes [ '777', '666' ]
+227 silly gunzTarPerm extractEntry color-convert-0.2.0.js
+228 silly gunzTarPerm modified mode [ 'color-convert-0.2.0.js', 420, 438 ]
+229 silly gunzTarPerm extractEntry package.json
+230 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+231 silly gunzTarPerm extractEntry .npmignore
+232 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+233 silly gunzTarPerm extractEntry index.js
+234 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+235 silly gunzTarPerm extractEntry install
+236 silly gunzTarPerm modified mode [ 'install', 493, 511 ]
+237 silly gunzTarPerm extractEntry History.md
+238 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+239 silly gunzTarPerm extractEntry color-convert-0.2.0.min.js
+240 silly gunzTarPerm modified mode [ 'color-convert-0.2.0.min.js', 420, 438 ]
+241 silly gunzTarPerm extractEntry .gitmodules
+242 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+243 silly gunzTarPerm extractEntry .travis.yml
+244 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+245 silly gunzTarPerm extractEntry lib/bindings.js
+246 silly gunzTarPerm modified mode [ 'lib/bindings.js', 420, 438 ]
+247 silly gunzTarPerm extractEntry lib/canvas.js
+248 silly gunzTarPerm modified mode [ 'lib/canvas.js', 420, 438 ]
+249 silly gunzTarPerm extractEntry lib/context2d.js
+250 silly gunzTarPerm modified mode [ 'lib/context2d.js', 420, 438 ]
+251 silly gunzTarPerm extractEntry lib/image.js
+252 silly gunzTarPerm modified mode [ 'lib/image.js', 420, 438 ]
+253 silly gunzTarPerm extractEntry lib/jpegstream.js
+254 silly gunzTarPerm modified mode [ 'lib/jpegstream.js', 420, 438 ]
+255 silly gunzTarPerm extractEntry lib/pixelarray.js
+256 silly gunzTarPerm modified mode [ 'lib/pixelarray.js', 420, 438 ]
+257 silly gunzTarPerm extractEntry lib/pngstream.js
+258 silly gunzTarPerm modified mode [ 'lib/pngstream.js', 420, 438 ]
+259 silly gunzTarPerm extractEntry Makefile
+260 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+261 silly gunzTarPerm extractEntry binding.gyp
+262 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+263 silly gunzTarPerm extractEntry Readme.md
+264 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
+265 silly gunzTarPerm extractEntry src/FontFace.cc
+266 silly gunzTarPerm modified mode [ 'src/FontFace.cc', 420, 438 ]
+267 silly gunzTarPerm extractEntry src/Canvas.cc
+268 silly gunzTarPerm modified mode [ 'src/Canvas.cc', 420, 438 ]
+269 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+270 silly gunzTarPerm modified mode [ 'src/CanvasGradient.cc', 420, 438 ]
+271 silly gunzTarPerm extractEntry src/CanvasGradient.h
+272 silly gunzTarPerm modified mode [ 'src/CanvasGradient.h', 420, 438 ]
+273 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+274 silly gunzTarPerm modified mode [ 'src/CanvasPattern.cc', 420, 438 ]
+275 silly gunzTarPerm extractEntry src/CanvasPattern.h
+276 silly gunzTarPerm modified mode [ 'src/CanvasPattern.h', 420, 438 ]
+277 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+278 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.cc', 420, 438 ]
+279 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+280 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.h', 420, 438 ]
+281 silly gunzTarPerm extractEntry src/closure.h
+282 silly gunzTarPerm modified mode [ 'src/closure.h', 420, 438 ]
+283 silly gunzTarPerm extractEntry src/color.cc
+284 silly gunzTarPerm modified mode [ 'src/color.cc', 420, 438 ]
+285 silly gunzTarPerm extractEntry src/color.h
+286 silly gunzTarPerm modified mode [ 'src/color.h', 420, 438 ]
+287 silly gunzTarPerm extractEntry src/Canvas.h
+288 silly gunzTarPerm modified mode [ 'src/Canvas.h', 420, 438 ]
+289 silly gunzTarPerm extractEntry src/FontFace.h
+290 silly gunzTarPerm modified mode [ 'src/FontFace.h', 420, 438 ]
+291 silly gunzTarPerm extractEntry src/Image.cc
+292 silly gunzTarPerm modified mode [ 'src/Image.cc', 420, 438 ]
+293 silly gunzTarPerm extractEntry src/Image.h
+294 silly gunzTarPerm modified mode [ 'src/Image.h', 420, 438 ]
+295 silly gunzTarPerm extractEntry src/ImageData.cc
+296 silly gunzTarPerm modified mode [ 'src/ImageData.cc', 420, 438 ]
+297 silly gunzTarPerm extractEntry src/ImageData.h
+298 silly gunzTarPerm modified mode [ 'src/ImageData.h', 420, 438 ]
+299 silly gunzTarPerm extractEntry src/init.cc
+300 silly gunzTarPerm modified mode [ 'src/init.cc', 493, 511 ]
+301 silly gunzTarPerm extractEntry src/JPEGStream.h
+302 silly gunzTarPerm modified mode [ 'src/JPEGStream.h', 420, 438 ]
+303 silly gunzTarPerm extractEntry src/nan.h
+304 silly gunzTarPerm modified mode [ 'src/nan.h', 420, 438 ]
+305 silly gunzTarPerm extractEntry src/PixelArray.cc
+306 silly gunzTarPerm modified mode [ 'src/PixelArray.cc', 420, 438 ]
+307 silly gunzTarPerm extractEntry src/PixelArray.h
+308 silly gunzTarPerm modified mode [ 'src/PixelArray.h', 420, 438 ]
+309 silly gunzTarPerm extractEntry src/Point.h
+310 silly gunzTarPerm modified mode [ 'src/Point.h', 420, 438 ]
+311 silly gunzTarPerm extractEntry util/cairo_include.sh
+312 silly gunzTarPerm modified mode [ 'util/cairo_include.sh', 493, 511 ]
+313 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+314 silly gunzTarPerm modified mode [ 'util/has_cairo_freetype.sh', 493, 511 ]
+315 silly gunzTarPerm extractEntry util/has_lib.sh
+316 silly gunzTarPerm modified mode [ 'util/has_lib.sh', 493, 511 ]
+317 silly gunzTarPerm extractEntry util/lib_lookup.sh
+318 silly gunzTarPerm modified mode [ 'util/lib_lookup.sh', 493, 511 ]
+319 silly gunzTarPerm extractEntry conversions.js
+320 silly gunzTarPerm modified mode [ 'conversions.js', 420, 438 ]
+321 silly gunzTarPerm extractEntry index.js
+322 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+323 silly gunzTarPerm extractEntry Jakefile.js
+324 silly gunzTarPerm modified mode [ 'Jakefile.js', 420, 438 ]
+325 silly gunzTarPerm extractEntry package.json
+326 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+327 silly gunzTarPerm extractEntry README.md
+328 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+329 silly gunzTarPerm extractEntry test.hml
+330 silly gunzTarPerm modified mode [ 'test.hml', 420, 438 ]
+331 silly gunzTarPerm extractEntry test/basic.js
+332 silly gunzTarPerm modified mode [ 'test/basic.js', 420, 438 ]
+333 verbose write writing to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert\package.json
+334 info preinstall color-convert@0.2.1
+335 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert\package.json
+336 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert\package.json
+337 silly install resolved []
+338 verbose about to build d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+339 info build d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+340 info linkStuff color-convert@0.2.1
+341 silly linkStuff color-convert@0.2.1 has d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules as its parent node_modules
+342 verbose linkBins color-convert@0.2.1
+343 verbose linkMans color-convert@0.2.1
+344 verbose rebuildBundles color-convert@0.2.1
+345 info install color-convert@0.2.1
+346 info postinstall color-convert@0.2.1
+347 verbose unlock done using C:\Users\admin\AppData\Roaming\npm-cache\_locks\color-convert-790ad383af280cc9.lock for d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\color-convert
+348 verbose write writing to d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas\package.json
+349 info preinstall canvas@1.0.4
+350 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas\package.json
+351 verbose readDependencies loading dependencies from d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas\package.json
+352 silly install resolved []
+353 verbose about to build d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+354 info build d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+355 info linkStuff canvas@1.0.4
+356 silly linkStuff canvas@1.0.4 has d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules as its parent node_modules
+357 verbose linkBins canvas@1.0.4
+358 verbose linkMans canvas@1.0.4
+359 verbose rebuildBundles canvas@1.0.4
+360 info install canvas@1.0.4
+361 verbose unsafe-perm in lifecycle true
+362 info canvas@1.0.4 Failed to exec install script
+363 verbose unlock done using C:\Users\admin\AppData\Roaming\npm-cache\_locks\canvas-6201a503620995be.lock for d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+364 verbose about to build d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+365 verbose unlock done using C:\Users\admin\AppData\Roaming\npm-cache\_locks\heatmap-223ff933a3ce8aa5.lock for d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+366 verbose stack Error: canvas@1.0.4 install: `node-gyp rebuild`
+366 verbose stack Exit status 1
+366 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
+366 verbose stack     at emitTwo (events.js:87:13)
+366 verbose stack     at EventEmitter.emit (events.js:172:7)
+366 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+366 verbose stack     at emitTwo (events.js:87:13)
+366 verbose stack     at ChildProcess.emit (events.js:172:7)
+366 verbose stack     at maybeClose (internal/child_process.js:827:16)
+366 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+367 verbose pkgid canvas@1.0.4
+368 verbose cwd d:\VSC_workspace\heatmap_feature
+369 error Windows_NT 6.1.7601
+370 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i"
+371 error node v4.4.4
+372 error npm  v2.15.1
+373 error code ELIFECYCLE
+374 error canvas@1.0.4 install: `node-gyp rebuild`
+374 error Exit status 1
+375 error Failed at the canvas@1.0.4 install script 'node-gyp rebuild'.
+375 error This is most likely a problem with the canvas package,
+375 error not with npm itself.
+375 error Tell the author that this fails on your system:
+375 error     node-gyp rebuild
+375 error You can get information on how to open an issue for this project with:
+375 error     npm bugs canvas
+375 error Or if that isn't available, you can get their info via:
+375 error
+375 error     npm owner ls canvas
+375 error There is likely additional logging output above.
+376 verbose exit [ 1, true ]
+377 verbose unbuild node_modules\heatmap\node_modules\canvas
+378 info preuninstall canvas@1.0.4
+379 info uninstall canvas@1.0.4
+380 verbose unbuild rmStuff canvas@1.0.4 from d:\VSC_workspace\heatmap_feature\node_modules
+381 verbose unbuild rmStuff in d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules
+382 info postuninstall canvas@1.0.4
+383 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas is being purged from base d:\VSC_workspace\heatmap_feature
+384 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+385 silly vacuum-fs purging d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules\canvas
+386 silly vacuum-fs quitting because other entries in d:\VSC_workspace\heatmap_feature\node_modules\heatmap\node_modules
+387 verbose unbuild node_modules\heatmap
+388 info preuninstall heatmap@0.0.5
+389 info uninstall heatmap@0.0.5
+390 verbose unbuild rmStuff heatmap@0.0.5 from d:\VSC_workspace\heatmap_feature\node_modules
+391 info postuninstall heatmap@0.0.5
+392 silly gentlyRm d:\VSC_workspace\heatmap_feature\node_modules\heatmap is being purged from base d:\VSC_workspace\heatmap_feature
+393 verbose gentlyRm don't care about contents; nuking d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+394 silly vacuum-fs purging d:\VSC_workspace\heatmap_feature\node_modules\heatmap
+395 silly vacuum-fs quitting because other entries in d:\VSC_workspace\heatmap_feature\node_modules
