@@ -43,7 +43,7 @@ namespace clickStatistics {
         }
     }
 
-    var aElementList: Element[] = [];
+    var aElementList: IRandomClick[] = [];
     var randomClickList: IRandomClick[] = [];
 
     // 生成随机点
@@ -56,16 +56,35 @@ namespace clickStatistics {
         return p;
     }
 
-    
-    function getClassElement(className):Element{
+    var recurrentPoint = (aElementList: IRandomClick[])=>{
+        aElementList.forEach(function(item,index){
+            var p = new Point(item.x,item.y);
+            p.textNumber = index + "ul";            
+            p.init();
+        });
+    }
+
+
+    function getClassElement(className): Element {
         return document.getElementsByClassName(className)[0];
     }
 
-    var dataCollection = (logoName,headerMenuName, ulName, imageListName, InputListName:Array<string>) => {
+    function getBoundingClientRect(item: Element): IRandomClick {
+        if (item instanceof Element) {
+            return {
+                x: item.getBoundingClientRect().left,
+                y: item.getBoundingClientRect().top
+            }
+        } else {
+            return null;
+        }
+    }
+
+    var dataCollection = (logoName, headerMenuName, ulName, imageListName, InputListName: Array<string>) => {
         for (var i = 0; i < 10; i++) {
             randomClickList.push(randomClick(i));
         }
-        
+
 
         var logoElement = getClassElement(logoName);
         var HeaderMenu = getClassElement(headerMenuName).getElementsByTagName('span');
@@ -74,34 +93,49 @@ namespace clickStatistics {
         var beginDateInput = document.getElementById(InputListName[0]);
         var endDateInput = document.getElementById(InputListName[1]);
 
+
+
+
+
+        aElementList.push(getBoundingClientRect(logoElement));
+        for(var i = 0;i<HeaderMenu.length;i++){
+            aElementList.push(getBoundingClientRect(HeaderMenu[i]));
+        }
+        console.log(aElementList);
+        
+        recurrentPoint(aElementList);
     }
 
     var index = 10;
 
-    document.onclick = function(event:MouseEvent){
+    document.onclick = function (event: MouseEvent) {
         var x = event.pageX;
         var y = event.pageY;
-        var p = new Point(x,y);
+        var p = new Point(x, y);
         p.textNumber = "" + index++;
         p.init();
         randomClickList.push(p);
         console.log(randomClickList);
     }
 
-    dataCollection('top_brand_txt','top_brand_icon', 'home_banner_dian', 'brand_boxT', ['beginDate','endDate']);
+    dataCollection('top_brand_txt', 'top_brand_icon', 'home_banner_dian', 'brand_boxT', ['beginDate', 'endDate']);
 
     window.onresize = function () {
-        var bannerBtnList = <HTMLElement>(document.getElementsByClassName("home_banner_dian")[0]);
 
-        for (var i = 0; i < bannerBtnList.children.length; i++) {
-            var aObject = <HTMLElement>(bannerBtnList.children[i]);
-            aObject.style.fontSize = '18px';
-        }
+        // 重绘位置
+        
+
+        // var bannerBtnList = <HTMLElement>(document.getElementsByClassName("home_banner_dian")[0]);
+
+        // for (var i = 0; i < bannerBtnList.children.length; i++) {
+        //     var aObject = <HTMLElement>(bannerBtnList.children[i]);
+        //     aObject.style.fontSize = '18px';
+        // }
 
 
-        var top = document.getElementById('imageId').getBoundingClientRect().top + document.body.scrollTop;
-        var left = document.getElementById('imageId').getBoundingClientRect().left;
-        var currentPageWidth = document.body.offsetWidth;
+        // var top = document.getElementById('imageId').getBoundingClientRect().top + document.body.scrollTop;
+        // var left = document.getElementById('imageId').getBoundingClientRect().left;
+        // var currentPageWidth = document.body.offsetWidth;
 
 
         // if (currentPageWidth > 1290 || currentPageWidth < 1903) {

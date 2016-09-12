@@ -37,16 +37,42 @@ var clickStatistics;
         p.init();
         return p;
     };
+    var recurrentPoint = function (aElementList) {
+        aElementList.forEach(function (item, index) {
+            var p = new Point(item.x, item.y);
+            p.textNumber = index + "ul";
+            p.init();
+        });
+    };
     function getClassElement(className) {
         return document.getElementsByClassName(className)[0];
+    }
+    function getBoundingClientRect(item) {
+        if (item instanceof Element) {
+            return {
+                x: item.getBoundingClientRect().left,
+                y: item.getBoundingClientRect().top
+            };
+        }
+        else {
+            return null;
+        }
     }
     var dataCollection = function (logoName, headerMenuName, ulName, imageListName, InputListName) {
         for (var i = 0; i < 10; i++) {
             randomClickList.push(randomClick(i));
         }
         var logoElement = getClassElement(logoName);
-        var HeaderMenu = getClassElement(headerMenuName);
+        var HeaderMenu = getClassElement(headerMenuName).getElementsByTagName('span');
         var listUlElement = getClassElement(ulName);
+        var beginDateInput = document.getElementById(InputListName[0]);
+        var endDateInput = document.getElementById(InputListName[1]);
+        aElementList.push(getBoundingClientRect(logoElement));
+        for (var i = 0; i < HeaderMenu.length; i++) {
+            aElementList.push(getBoundingClientRect(HeaderMenu[i]));
+        }
+        console.log(aElementList);
+        recurrentPoint(aElementList);
     };
     var index = 10;
     document.onclick = function (event) {
@@ -58,7 +84,7 @@ var clickStatistics;
         randomClickList.push(p);
         console.log(randomClickList);
     };
-    dataCollection('top_brand_txt', null, null, null, null);
+    dataCollection('top_brand_txt', 'top_brand_icon', 'home_banner_dian', 'brand_boxT', ['beginDate', 'endDate']);
     window.onresize = function () {
         var bannerBtnList = (document.getElementsByClassName("home_banner_dian")[0]);
         for (var i = 0; i < bannerBtnList.children.length; i++) {
