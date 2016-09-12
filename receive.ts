@@ -56,18 +56,31 @@ namespace clickStatistics {
         return p;
     }
 
+    
+    function getClassElement(className):Element{
+        return document.getElementsByClassName(className)[0];
+    }
 
-    var dataCollection = (headerMenuName, ulName, imageListName, InputListName) => {
+    var dataCollection = (logoName,headerMenuName, ulName, imageListName, InputListName:Array<string>) => {
         for (var i = 0; i < 10; i++) {
             randomClickList.push(randomClick(i));
         }
+        
+
+        var logoElement = getClassElement(logoName);
+        var HeaderMenu = getClassElement(headerMenuName).getElementsByTagName('span');
+        var listUlElement = getClassElement(ulName);
+
+        var beginDateInput = document.getElementById(InputListName[0]);
+        var endDateInput = document.getElementById(InputListName[1]);
+
     }
 
     var index = 10;
 
     document.onclick = function(event:MouseEvent){
-        var x = event.clientX;
-        var y = event.clientY;
+        var x = event.pageX;
+        var y = event.pageY;
         var p = new Point(x,y);
         p.textNumber = "" + index++;
         p.init();
@@ -75,7 +88,7 @@ namespace clickStatistics {
         console.log(randomClickList);
     }
 
-    dataCollection(null, null, null, null);
+    dataCollection('top_brand_txt','top_brand_icon', 'home_banner_dian', 'brand_boxT', ['beginDate','endDate']);
 
     window.onresize = function () {
         var bannerBtnList = <HTMLElement>(document.getElementsByClassName("home_banner_dian")[0]);

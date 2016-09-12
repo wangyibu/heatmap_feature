@@ -37,22 +37,28 @@ var clickStatistics;
         p.init();
         return p;
     };
-    var dataCollection = function (headerMenuName, ulName, imageListName, InputListName) {
+    function getClassElement(className) {
+        return document.getElementsByClassName(className)[0];
+    }
+    var dataCollection = function (logoName, headerMenuName, ulName, imageListName, InputListName) {
         for (var i = 0; i < 10; i++) {
             randomClickList.push(randomClick(i));
         }
+        var logoElement = getClassElement(logoName);
+        var HeaderMenu = getClassElement(headerMenuName);
+        var listUlElement = getClassElement(ulName);
     };
     var index = 10;
     document.onclick = function (event) {
-        var x = event.clientX;
-        var y = event.clientY;
+        var x = event.pageX;
+        var y = event.pageY;
         var p = new Point(x, y);
         p.textNumber = "" + index++;
         p.init();
         randomClickList.push(p);
         console.log(randomClickList);
     };
-    dataCollection(null, null, null, null);
+    dataCollection('top_brand_txt', null, null, null, null);
     window.onresize = function () {
         var bannerBtnList = (document.getElementsByClassName("home_banner_dian")[0]);
         for (var i = 0; i < bannerBtnList.children.length; i++) {
