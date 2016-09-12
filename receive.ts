@@ -1,4 +1,4 @@
-namespace clickStatistics {
+namespace clickStatistic.demo {
 
 
 
@@ -26,7 +26,7 @@ namespace clickStatistics {
             div.style.textAlign = 'center';
             div.style.color = 'white';
             div.style.fontSize = '10px';
-            div.style.zIndex = '1000';
+            div.style.zIndex = '9999';
 
             div.setAttribute('data-point', 'cp');
 
