@@ -26,6 +26,12 @@ for(var i = 0;i<aList.length;i++){
     obj[aList[i].className] = [];
 }
 
+
+function resetClickPosition(){
+    
+}
+
+
 window.onresize = function () {
     var currentPageWidth = document.body.offsetWidth;
     // var idList = ['imageId0', 'imageId1', 'imageId2', 'imageId3', 'imageId4',

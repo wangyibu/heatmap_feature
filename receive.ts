@@ -1,4 +1,4 @@
-module demo {
+module demoTest {
 
     interface IRandomClick {
         x: number;
