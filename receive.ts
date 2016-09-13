@@ -1,6 +1,4 @@
-namespace clickStatistic.demo {
-
-
+module demo {
 
     interface IRandomClick {
         x: number;
@@ -72,8 +70,8 @@ namespace clickStatistic.demo {
     function getBoundingClientRect(item: Element): IRandomClick {
         if (item instanceof Element) {
             return {
-                x: item.getBoundingClientRect().left,
-                y: item.getBoundingClientRect().top
+                x: item.getBoundingClientRect().left ,
+                y: item.getBoundingClientRect().top + document.body.scrollTop
             }
         } else {
             return null;
@@ -81,9 +79,9 @@ namespace clickStatistic.demo {
     }
 
     var dataCollection = (logoName, headerMenuName, ulName, imageListName, InputListName: Array<string>) => {
-        for (var i = 0; i < 10; i++) {
-            randomClickList.push(randomClick(i));
-        }
+        // for (var i = 0; i < 10; i++) {
+        //     randomClickList.push(randomClick(i));
+        // }
 
 
         var logoElement = getClassElement(logoName);
@@ -101,9 +99,9 @@ namespace clickStatistic.demo {
         for(var i = 0;i<HeaderMenu.length;i++){
             aElementList.push(getBoundingClientRect(HeaderMenu[i]));
         }
-        console.log(aElementList);
-        
         recurrentPoint(aElementList);
+
+        //console.log(aElementList);
     }
 
     var index = 10;

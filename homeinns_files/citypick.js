@@ -174,7 +174,7 @@ function bindCityInput(obj) {
 }
 
 $(function () {
-    var load_city = setTimeout(loadCity, 1000);
+   // var load_city = setTimeout(loadCity, 1000);
     //城市自动选择
     $("#city_select").click(function () {
         $(".keyword_pop").hide();
