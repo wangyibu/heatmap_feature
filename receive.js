@@ -1,5 +1,5 @@
-var demo;
-(function (demo) {
+var demoTest;
+(function (demoTest) {
     var Point = (function () {
         function Point(x, y) {
             this.x = x;
@@ -17,15 +17,16 @@ var demo;
             div.style.position = 'absolute';
             div.style.left = this.x + 'px';
             div.style.top = this.y + 'px';
-            div.style.backgroundColor = 'red';
-            div.style.height = '15px';
-            div.style.width = '15px';
-            div.style.borderRadius = '50%';
+            div.style.backgroundColor = this.pointColor ? this.pointColor : '#2196f3';
+            div.style.height = '18px';
+            div.style.lineHeight = '16px';
+            div.style.width = '18px';
+            div.style.borderRadius = '0 50% 50%';
             document.body.appendChild(div);
         };
         return Point;
     }());
-    demo.Point = Point;
+    demoTest.Point = Point;
     var aElementList = [];
     var randomClickList = [];
     // 生成随机点
@@ -40,7 +41,7 @@ var demo;
     var recurrentPoint = function (aElementList) {
         aElementList.forEach(function (item, index) {
             var p = new Point(item.x, item.y);
-            p.textNumber = index + "ul";
+            p.textNumber = index + "";
             p.init();
         });
     };
@@ -80,6 +81,7 @@ var demo;
         var y = event.pageY;
         var p = new Point(x, y);
         p.textNumber = "" + index++;
+        p.pointColor = '#4caf50';
         p.init();
         randomClickList.push(p);
         console.log(randomClickList);
@@ -107,4 +109,4 @@ var demo;
         //     console.log(aElementList);
         // }
     };
-})(demo || (demo = {}));
+})(demoTest || (demoTest = {}));
