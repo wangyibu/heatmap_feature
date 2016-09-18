@@ -9,10 +9,11 @@ module demoTest {
         x: number;
         y: number;
         textNumber: string;
+        pointColor: string;
+        currentBodyWidth:number;
         constructor(x: number, y: number) {
             this.x = x;
             this.y = y;
-
         }
 
         init() {
@@ -32,10 +33,11 @@ module demoTest {
             div.style.left = this.x + 'px';
             div.style.top = this.y + 'px';
 
-            div.style.backgroundColor = 'red';
-            div.style.height = '15px';
-            div.style.width = '15px';
-            div.style.borderRadius = '50%';
+            div.style.backgroundColor = this.pointColor ? this.pointColor:'#2196f3';
+            div.style.height = '18px';
+            div.style.lineHeight = '16px';
+            div.style.width = '18px';
+            div.style.borderRadius = '0 50% 50%';
 
             document.body.appendChild(div);
         }
@@ -54,10 +56,10 @@ module demoTest {
         return p;
     }
 
-    var recurrentPoint = (aElementList: IRandomClick[])=>{
-        aElementList.forEach(function(item,index){
-            var p = new Point(item.x,item.y);
-            p.textNumber = index + "ul";            
+    var recurrentPoint = (aElementList: IRandomClick[]) => {
+        aElementList.forEach(function (item, index) {
+            var p = new Point(item.x, item.y);
+            p.textNumber = index + "";
             p.init();
         });
     }
@@ -70,7 +72,7 @@ module demoTest {
     function getBoundingClientRect(item: Element): IRandomClick {
         if (item instanceof Element) {
             return {
-                x: item.getBoundingClientRect().left ,
+                x: item.getBoundingClientRect().left,
                 y: item.getBoundingClientRect().top + document.body.scrollTop
             }
         } else {
@@ -96,7 +98,7 @@ module demoTest {
 
 
         aElementList.push(getBoundingClientRect(logoElement));
-        for(var i = 0;i<HeaderMenu.length;i++){
+        for (var i = 0; i < HeaderMenu.length; i++) {
             aElementList.push(getBoundingClientRect(HeaderMenu[i]));
         }
         recurrentPoint(aElementList);
@@ -111,6 +113,7 @@ module demoTest {
         var y = event.pageY;
         var p = new Point(x, y);
         p.textNumber = "" + index++;
+        p.pointColor = '#4caf50';
         p.init();
         randomClickList.push(p);
         console.log(randomClickList);
@@ -121,7 +124,7 @@ module demoTest {
     window.onresize = function () {
 
         // 重绘位置
-        
+
 
         // var bannerBtnList = <HTMLElement>(document.getElementsByClassName("home_banner_dian")[0]);
 
