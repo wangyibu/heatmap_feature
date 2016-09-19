@@ -1,13 +1,10 @@
-GET http://localhost:63934/api/1.0.0-beta/urlManager/getParameter
-    ?md5=1a6cb9791a16a8e92133dedb9595f302
-    &rt=1474253541517
+GET http://localhost:63934/api/1.0.0-beta/urlManager/getParameter?md5=1a6cb9791a16a8e92133dedb9595f302&rt=1474253541517 HTTP/1.1
 Host: localhost:63934
 Connection: keep-alive
-Accept: application/json, text/plain, */*
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36
-Referer: http://localhost:63934/
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4
-Cookie: X-Gridsum-FullTicketId=TGT-41921-qnpXoNhqCKiCrtGcgfEgB2dEgezjfCic1d2Z474XlPkCbTc7ec-x-gridsumdissector; .AspNetCore.Session=CfDJ8JYbJJ8WoRdCnQYcFbveVPyQN4YSRz4d0z5vXC3F11nn73dJMY9Noz2EQYRF1pbgWOeKM5VxNYt8H2%2FL3Ku2psWutcwHf%2FIpLpm9Gc%2BorK4VBhnFmiGtiJ8TV8cktqOgMOXuSmIMUidaxg9PVB1gpJBCoZm5wjHIn2p69tDDWoDN; _gscu_334684783=73823327blumq920; _gscs_334684783=74250745bfu0g820|pv:48; _gscbrs_334684783=1
-
-
+Cookie: X-Gridsum-FullTicketId=TGT-41921-qnpXoNhqCKiCrtGcgfEgB2dEgezjfCic1d2Z474XlPkCbTc7ec-x-gridsumdissector; .AspNetCore.Session=CfDJ8JYbJJ8WoRdCnQYcFbveVPyyHCclMgDzTxHLRk9A%2FgX5sUDIv38214LEAhOIG4bLk56TwWyLyvZVHyGgzz8FqPbfUb4Bh%2Bu5d28Q6nmF1QaTJek9eaShiimruYjyv9NKhknw%2BHNUYsSneJnD3%2BD5y2JNmRQe1kLc97duqm5E37WL; _gscu_334684783=73823327blumq920; _gscs_334684783=74250745bfu0g820|pv:75; _gscbrs_334684783=1
