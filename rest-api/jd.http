@@ -1,0 +1,12 @@
+GET search.jd.com/search
+    ?keyword=%E7%94%B5%E8%84%91&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E7%94%B5%E8%84%91&cid2=671&cid3=12798&ev=212_1675%40933_40614%40149_17976%40&uc=0 
+Host: search.jd.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Referer: https://search.jd.com/search?keyword=%E7%94%B5%E8%84%91&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E7%94%B5%E8%84%91&cid2=671&cid3=12798&ev=212_1675%40933_40614%40&uc=0
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4
+Cookie: __jdv=122270672|direct|-|none|-; areaId=1; __jda=122270672.105260706.1473833634.1473833634.1474279307.1; __jdb=122270672.12.105260706|1.1474279307; __jdc=122270672; rkv=V0900; ipLoc-djd=1-72-2799-0; ipLocation=%u5317%u4EAC; __jdu=105260706; xtest=17152.7252.d9798cdf31c02d86b8b81cc119d94836.b7a782741f667201b54880c925faec4b; mx=0_X
