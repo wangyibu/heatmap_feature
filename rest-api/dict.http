@@ -1,5 +1,5 @@
 GET /BingDictService.aspx
-    ?Word=%E8%8A%B1%E7%93%A3
+    ?Word=花瓣
 Host: xtk.azurewebsites.net
 Connection: keep-alive
 Cache-Control: max-age=0
