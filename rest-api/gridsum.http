@@ -1,0 +1,48 @@
+POST /rcapi/v1/CommonQuery/Query HTTP/1.1
+Host: rc2.gridsumdissector.com
+Connection: keep-alive
+Content-Length: 584
+Accept: text/plain
+Origin: http://rc2.gridsumdissector.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36
+X-Gridsum-FullTicketId: TGT-17228-vgSJJshKycquWmCGXcqYV2WW5GHH0c91rhCvDxhm7yrNqyDZDb-x-gridsumdissector
+Content-Type: application/json
+Referer: http://rc2.gridsumdissector.com/swagger/ui/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4
+Cookie: GRIDSUMID=b9a5dc37c5534b629f911c9f56eb1c36
+
+{
+  "columns": [
+    "Report.ReportKey",
+    "Report.Caption",
+    "Report.PeriodType",
+    "Report.LastExecutionDate",
+    "Report.NextExecutionDate",
+    "Report.ModifyAccountName",
+    "Report.Status"
+  ],
+  "groupBys": null,
+  "filter":null,
+  "paging": {
+    "pageIndex": 0,
+    "pageSize": 4
+  },
+  "orderBys": null,
+  "options": {
+    "OptionPairs": [
+      {
+        "Key": "QueryKey",
+        "Value": "RcReport"
+      },
+      {
+        "Key": "QueryWithoutCache",
+        "Value": "true"
+      },
+      {
+        "Key": "ProfileId",
+        "Value": 702
+      }
+    ]
+  }
+}
